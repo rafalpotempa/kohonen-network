@@ -3,14 +3,16 @@ from internal.data import *
 from internal.plot import *
 from random import choice
 
-foci = [[2, 2],
-        [2, 4],
-        [4, 2]]
+focals = [[2, 2],
+          [2, 4],
+          [4, 2]]
 
-data = GenerateData(foci)
+data = GenerateData(focals)
 
 network = Network(2, 3)
-
 point = choice(data)
 
-print(network.Closest(choice(data)))
+plot = Plot()
+plot.Scatter(data)
+plot.Scatter(network.Unpacked())
+plot.Show()

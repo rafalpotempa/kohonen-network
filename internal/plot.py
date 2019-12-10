@@ -2,14 +2,16 @@ import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.animation import FuncAnimation
 
+class Plot:
+	def Scatter(self, data):
+		_data = {
+			'x': [point['x'] for point in data],
+			'y': [point['y'] for point in data]}
 
-def Scatter(data):
-	_data = {
-		'x': [point['x'] for point in data],
-		'y': [point['y'] for point in data]}
-
-	plt.scatter('x', 'y', data=_data)
-	plt.show()
+		plt.scatter('x', 'y', data=_data)
+	def Show(self):
+		plt.show()
+	
 
 if __name__ == "__main__":
 	plt.style.use('seaborn-pastel')

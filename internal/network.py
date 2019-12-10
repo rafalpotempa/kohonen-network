@@ -19,3 +19,14 @@ class Network:
 					closest = [i, j, neuron]
 		return closest
 
+	def Update(self):
+		pass
+
+	def Unpacked(self):
+		unpacked = []
+		for row in self.neurons:
+			for neuron in row:
+				unpacked.append(neuron)
+
+		return unpacked
+
