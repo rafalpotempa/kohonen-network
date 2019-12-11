@@ -1,8 +1,6 @@
 from random import seed, gauss
 
-seed(0)
-
-def GenerateData(points, sigma=0.2):
+def GenerateData(points, sigma=0.5):
 	data = []
 	for point in points:
 		for i in range(100):
