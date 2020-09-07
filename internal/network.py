@@ -8,7 +8,7 @@ class Network:
 	m:		 int
 	n:		 int
 	def __init__(self, m, n):
-		self.N = 1
+		self.N = 3
 		self.m = m
 		self.n = n
 		self.alpha = 0.1
